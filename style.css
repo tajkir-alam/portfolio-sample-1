@@ -13,10 +13,10 @@ button{
 }
 .container{
     margin: 0 10%;
+    color: black;
 }
 a{
     text-decoration: none;
-    color: black;
 }
 header{
     background: #FFF8F3;
@@ -24,6 +24,13 @@ header{
     background-repeat: no-repeat;
     background-position: right bottom, 1% top;
     background-size: 55%, contain;
+}
+header .title > h1{
+    font-weight: 800;
+    font-size: 45px;
+}
+header .secondary-text{
+    color: #FD6E0A;
 }
 header .nav-bar{
     display: flex;
@@ -38,7 +45,11 @@ header .nav-bar{
 .menu-bar ul li{
     list-style: none;
 }
-
+.menu-bar ul li > a{
+    font-weight: 400;
+    font-size: 20px;
+    color: #474747;
+}
 header .banner-content{
     display: flex;
     align-items: center;
@@ -53,8 +64,10 @@ header .header-btn{
 }
 
 .description-img{
-    max-width: 484px;
-    min-width: 184px;
-    max-height: 576px;
-    min-height: 176px;
+    max-width: 584px;
+    min-width: 84px;
+    max-height: 676px;
+    min-height: 76px;
+    margin-top: 5%;
+    margin-bottom: 0;
 }
