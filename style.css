@@ -35,6 +35,11 @@ a{
 .default-margin > h2, p{
     margin-bottom: 5%;
 }
+.common-container{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
 
 /* Header Section */
 header{
@@ -116,29 +121,28 @@ header .header-btn{
     border-radius: 10px;
     text-align: center;
 }
-.about-me .section-title{
+.section-title{
     font-weight: 700;
     font-size: 35px;
     color: #181818;
 }
-.about-me .section-details{
+.section-details{
     font-weight: 400;
     font-size: 18px;
     color: #757575;
 }
-.about-me .about-me-container{
-    display: flex;
-    gap: 5%;
-    justify-content: center;
-}
-.about-me-container .about-me-content > h5{
+.about-me .about-me-content > h5{
     font-weight: 400;
     font-size: 20px;
     color: #757575;
 }
-.about-me-container .about-me-content > h4{
+.about-me .about-me-content > h4{
     font-weight: 700;
     color: #474747;
 }
 
 /* What I do seciton */
+.my-work{
+    text-align: center;
+    padding: 0 160px;
+}
