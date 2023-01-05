@@ -44,11 +44,13 @@ a{
     font-weight: 700;
     font-size: 35px;
     color: #181818;
+    text-align: center;
 }
 .section-details{
     font-weight: 400;
     font-size: 18px;
     color: #757575;
+    text-align: center;
 }
 
 
@@ -162,4 +164,36 @@ header .header-btn{
     font-weight: 400;
     font-size: 18px;
     color: #757575;
+}
+
+/* Resume Section */
+.resume-container{
+    display: flex;
+    gap: 10%;
+}
+.resume-content .resume-title{
+    margin-bottom: 5%;
+    color: #474747;
+    font-size: 25px;
+}
+.resume-content .resume-head-line{
+    margin-bottom: 1%;
+    color: #474747;
+    font-size: 20px;
+}
+.resume-content .resume-bio{
+    margin-bottom: 3%;
+    color: #757575;
+    font-size: 15px;
+}
+.resume-content .resume-details{
+    color: #757575;
+}
+.resume-content .resume-line{
+    color: #757575;
+    width: 117%;
+    border-bottom: none;
+}
+.resume-btn{
+    margin: 30px auto;
 }
