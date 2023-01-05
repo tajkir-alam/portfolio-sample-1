@@ -143,7 +143,7 @@ header .header-btn{
 }
 
 /* What I do seciton */
-.my-work .section-title, .section-details{
+.my-work > .section-title, .my-work-section-details{
     text-align: center;
     padding: 0 160px;
 }
