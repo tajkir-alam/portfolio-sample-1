@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+/* Common style section */
 button{
     display: flex;
     align-items: center;
@@ -28,6 +29,14 @@ button{
 a{
     text-decoration: none;
 }
+.default-margin{
+    margin-top: 10%;
+}
+.default-margin > h2, p{
+    margin-bottom: 5%;
+}
+
+/* Header Section */
 header{
     background: #FFF8F3;
     background-image: url(images/header_bg.png), url(images/developer.png);
@@ -99,3 +108,37 @@ header .header-btn{
     margin-top: 5%;
     margin-bottom: 0;
 }
+
+/* About Section */
+.about-me{
+    padding: 130px 160px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    text-align: center;
+}
+.about-me .section-title{
+    font-weight: 700;
+    font-size: 35px;
+    color: #181818;
+}
+.about-me .section-details{
+    font-weight: 400;
+    font-size: 18px;
+    color: #757575;
+}
+.about-me .about-me-container{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+.about-me-container .about-me-content > h5{
+    font-weight: 400;
+    font-size: 20px;
+    color: #757575;
+}
+.about-me-container .about-me-content > h4{
+    font-weight: 700;
+    color: #474747;
+}
+
+/* What I do seciton */
