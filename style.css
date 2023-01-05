@@ -7,9 +7,19 @@
 button{
     display: flex;
     align-items: center;
-    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 25px;
     border: none;
     border-radius: 5px;
+    background: #FD6E0A;
+    color: white;
+    cursor: pointer;
+}
+.secondary-btn{
+    color: #FD6E0A;
+    background: transparent;
+    border: 1px solid #FD6E0A;
 }
 .container{
     margin: 0 10%;
@@ -54,8 +64,26 @@ header .banner-content{
     display: flex;
     align-items: center;
 }
-
-header .header-description .description-content > h4, h1, p{
+header .header-description{
+    width: 50%;
+}
+header .banner-content .header-description > h4{
+    font-weight: 600;
+    font-size: 40px; 
+    color: #474747;  
+}
+header .banner-content .header-description > h1{
+    font-weight: 700;
+    font-size: 70px;
+    color: #181818; 
+}
+header .banner-content .header-description > p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 6%;
+}
+header .header-description > h4, h1{
     margin-bottom: 2.5%;
 }
 header .header-btn{
