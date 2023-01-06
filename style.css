@@ -17,6 +17,10 @@ button{
     color: white;
     cursor: pointer;
 }
+.btn{
+    display: flex;
+    align-items: center;
+}
 .secondary-btn{
     color: #FD6E0A;
     background: transparent;
@@ -132,7 +136,6 @@ header .header-btn{
     padding: 130px 160px;
     background: #FFF8F3;
     border-radius: 10px;
-    text-align: center;
 }
 .about-me .about-me-content > h5{
     font-weight: 400;
@@ -196,4 +199,45 @@ header .header-btn{
 }
 .resume-btn{
     margin: 30px auto;
+}
+
+/* Footer Section Start */
+footer{
+    background: #FFF8F3;
+}
+footer .footer-section{
+    padding: 130px 80px;
+    display: flex;
+    gap: 5%;
+}
+footer .left-container{
+    max-width: 60%;
+}
+footer .footer-title{
+    text-align: left;
+}
+footer .footer-details{
+    margin: 5% 0;
+    font-weight: 400;
+    color: #474747;
+}
+
+footer .right-container{
+    min-width: 40%;
+}
+footer .form-title{
+    text-align: left;
+}
+form .form-input{
+    padding: 20px 30px;
+    font-weight: 400;
+    color: #757575;
+    width: 100%;
+    margin-top: 10%;
+    border: none;
+    border-radius: 10px;
+}
+form textarea{
+    resize: none;
+    height: 170px;
 }
