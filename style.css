@@ -162,7 +162,6 @@ header .header-btn{
     text-align: left;
     padding: 20px;
     max-width: 25%;
-    max-height: 400px;
 }
 .my-work .card > img, h3{
     margin-bottom: 20px;
@@ -210,12 +209,10 @@ footer{
     background: #FFF8F3;
 }
 footer .footer-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
     padding: 130px 80px;
-    display: flex;
-    gap: 5%;
-}
-footer .left-container{
-    max-width: 60%;
 }
 footer .footer-title{
     text-align: left;
@@ -226,9 +223,6 @@ footer .footer-details{
     color: #474747;
 }
 
-footer .right-container{
-    min-width: 40%;
-}
 footer .form-title{
     text-align: left;
 }
@@ -312,15 +306,11 @@ form textarea{
     }
 
     footer .footer-section{
-        flex-direction: column;
         padding: 20px;
     }
-    footer .left-container{
-        max-width: 100%;
+    footer .footer-section{
+        grid-template-columns: repeat(1, 1fr);
     }
-    footer .right-container{
-        max-width: 100%;
-    }   
 }
 
 
@@ -335,9 +325,23 @@ form textarea{
     .menu-bar ul{
         gap: 20px;
     }
+    .nav-bar .menu-bar ul li > button{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
     .header-description .header-btn > button{
-        font-size: 12px;
-        padding: 5px 10px;
+        font-size: 16px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+    }
+    header .banner-content .header-description > h4{
+        font-size: 30px;
+    }
+    header .banner-content .header-description > h1{
+        font-size: 40px;
+    }
+    header .banner-content .header-description > p{
+        font-size: 16px;
     }
 
     .about-me{
@@ -367,7 +371,7 @@ form textarea{
         grid-template-columns: repeat(2, 1fr);
     }
     footer .footer-title, .form-title{
-        font-size: 16px;
+        font-size: 24px;
     }
     footer .footer-details{
         font-size: 12px;
