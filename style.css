@@ -55,6 +55,7 @@ a{
     font-size: 18px;
     color: #757575;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 
@@ -156,7 +157,7 @@ header .header-btn{
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
     text-align: left;
-    padding: 15px;
+    padding: 20px;
     max-width: 25%;
     max-height: 400px;
 }
@@ -240,4 +241,50 @@ form .form-input{
 form textarea{
     resize: none;
     height: 170px;
+}
+
+
+
+
+/* Media break points */
+
+@media screen and (max-width: 576px) {
+    .about-me{
+        padding: 50px 20px;
+    }
+    .about-container{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .my-work > .section-title, .my-work-section-details{
+        padding: 0px 20px;
+    }
+    .my-work-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .my-work .card{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .resume-container{
+        flex-direction: column;
+
+    }
+
+    .footer-section{
+        flex-direction: column;
+        padding: 0px 0px;
+        margin: 0px;
+    }
+    footer .left-container{
+        max-width: 100%;
+    }
+    footer .right-container{
+        max-width: 100%;
+    }
+    
 }
