@@ -143,10 +143,12 @@ header .header-btn{
     font-weight: 400;
     font-size: 20px;
     color: #757575;
+    text-align: center;
 }
 .about-me .about-me-content > h4{
     font-weight: 700;
     color: #474747;
+    text-align: center;
 }
 
 /* What I do seciton */
@@ -247,8 +249,8 @@ form textarea{
 
 
 
-/* Media break points */
-
+            /* Media break points */
+/* for <576 width devices */
 @media screen and (max-width: 576px) {
     header{
         background: #FFF8F3;
@@ -281,14 +283,12 @@ form textarea{
         font-size: 12px;
     }
 
-
     .about-me{
         padding: 50px 20px;
     }
     .about-container{
         flex-direction: column;
         gap: 20px;
-        text-align: center;
     }
 
     .my-work > .section-title, .my-work-section-details{
@@ -320,7 +320,62 @@ form textarea{
     }
     footer .right-container{
         max-width: 100%;
+    }   
+}
+
+
+/* for <768 width devices */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header .title > h1{
+        font-size: 35px;
     }
-    
-    
+    .menu-bar ul li > a{
+        font-size: 16px;
+    }
+    .menu-bar ul{
+        gap: 20px;
+    }
+    .header-description .header-btn > button{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .about-me{
+        padding: 50px 20px;
+    }
+    .about-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .my-work > .section-title, .my-work-section-details{
+        padding: 0px 20px;
+    }
+    .my-work-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .my-work .card{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer .footer-section{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer .footer-title, .form-title{
+        font-size: 16px;
+    }
+    footer .footer-details{
+        font-size: 12px;
+    }
+    form .form-input{
+        padding: 10px 15px;
+    }
+    form textarea{
+        height: 80px;
+    }
 }
